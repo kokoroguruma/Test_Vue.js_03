@@ -1,13 +1,27 @@
 <template>
   <div id="app">
+
+    <tab-menu></tab-menu>
+
+    <hr />
+
     <img src="./assets/logo.png">
+
+    <!-- routerが差し替わる -->
     <router-view/>
+
   </div>
 </template>
 
 <script>
+
+import TabMenu from '@/components/TabMenu'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    TabMenu
+  }
 }
 </script>
 
